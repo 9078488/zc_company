@@ -44,7 +44,7 @@ const Products = () => {
             <img
               src={currentBrand.image}
               alt={currentBrand.name}
-              className="rounded-lg h-100 w-auto mb-8"
+              className="rounded-lg h-100 w-auto mb-8 object-contain"
             />
             {/* 品牌描述 */}
             <div className="text-base text-gray-700 space-y-2">

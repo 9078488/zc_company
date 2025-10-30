@@ -7,7 +7,7 @@ const Sidebar = () => {
   const location = useLocation()
 
   return (
-    <div className="flex flex-col items-start justify-between w-1/6 min-h-screen bg-gray-200 pt-8 pl-4 pr-2 ">
+    <div className="flex flex-col items-center md:items-start justify-between w-1/6 min-h-screen bg-gray-200 pt-8 pl-4 pr-2 ">
       {/* 上半部分：Logo + 导航 */}
       <div>
         {/* ✅ 点击 Logo 区域跳转首页 */}
@@ -17,7 +17,7 @@ const Sidebar = () => {
             alt="上海峥程"
             className="pl-2.5 h-6 w-auto object-contain"
           />
-          <h1 className="font-extrabold text-2xl tracking-wider text-green-600">
+          <h1 className="font-extrabold text-2xl tracking-wider text-green-600 hidden md:block">
             峥程
           </h1>
         </Link>
@@ -39,7 +39,7 @@ const Sidebar = () => {
                       : 'text-gray-700 hover:bg-green-100 hover:text-green-700'
                   }`}
               >
-                {Icon && <Icon className="text-xl" />}
+                {Icon && <Icon className="text-xl hidden md:block" />}
                 <span>{route.name}</span>
               </Link>
             )
