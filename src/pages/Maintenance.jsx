@@ -16,7 +16,7 @@ export default function Maintenance() {
 
       {/* Footer info */}
       <p className="text-gray-400 text-xs mt-10">
-        © {new Date().getFullYear()} {company.company_name}
+        © {new Date().getFullYear()} {companyInfo.company_name}
       </p>
     </div>
   )
