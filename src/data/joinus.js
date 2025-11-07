@@ -1,6 +1,8 @@
+import { nanoid } from 'nanoid'
+
 const joinUsPositions = [
   {
-    id: 1,
+    id: nanoid(),
     title: '销售工程师（广州）',
     responsibilities: [
       '负责板式换热器的销售工作，具体包括：',
@@ -18,7 +20,7 @@ const joinUsPositions = [
     location: '广州（Home office）',
   },
   {
-    id: 2,
+    id: nanoid(),
     title: '销售工程师（北京）',
     responsibilities: [
       '负责板式换热器的销售工作，具体包括：',

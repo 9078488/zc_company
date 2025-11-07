@@ -2,10 +2,11 @@ import sondex_phe from '/product_images/sondex-standard-plate-heat-exchangers.pn
 import rotorkProduct from '/product_images/rotorkProduct.jpg'
 import sondex_logo from '/brand_logo/sondex_logo.png'
 import rotork_logo from '/brand_logo/rotork_logo.png'
+import { nanoid } from 'nanoid'
 
 const brands = [
   {
-    id: '1',
+    id: nanoid(),
     name: '桑德斯(Sondex)板式换热器',
     brand: '桑德斯(Sondex)',
     brand_logo: sondex_logo,
@@ -18,7 +19,7 @@ const brands = [
     ],
   },
   {
-    id: '2',
+    id: nanoid(),
     name: '罗托克(Rotork)执行器',
     brand: '罗托克(Rotork)',
     brand_logo: rotork_logo,
